@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chofu Map | LifeEasyChofu</title>
+
+    <meta name="description" content="Interactive map guide for UEC students and residents living in Chofu City.">
+
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Bootstrap Icons -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- Map CSS -->
+
+    <link rel="stylesheet" href="css/map.css">
+
+
+</head>
+
+
+<body>
+
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+
+        <div class="container">
+
+
+            <a class="navbar-brand text-success fw-bold" href="index.html">
+
+                LifeEasyChofu
+
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+
+                <ul class="navbar-nav ms-auto">
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="garbage.html">
+                            Garbage Guide
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="shopping.html">
+                            Shopping
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="map.html">
+                            Map
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            About
+                        </a>
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+
+        </div>
+
+    </nav>
+
+
+
+
+
+    <!-- Hero -->
+
+    <section class="map-hero">
+
+        <div class="container text-center">
+
+            <h1>
+                📍 UEC Campus & Chofu Survival Map
+            </h1>
+
+
+            <p>
+                Discover useful places, affordable food,
+                shopping areas and relaxing spots around Chofu City.
+            </p>
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!-- Interactive Buttons -->
+
+
+    <section class="map-guide">
+
+        <div class="container">
+
+
+            <div class="guide-buttons">
+
+
+                <button onclick="openNote('eat')" class="guide-btn food">
+
+                    🍜 Budget Eats
+
+                </button>
+
+
+                <button onclick="openNote('shop')" class="guide-btn shopping">
+
+                    🛍 Shopping Tips
+
+                </button>
+
+
+                <button onclick="openNote('place')" class="guide-btn places">
+
+                    🌿 Interesting Places
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- Google Map -->
+
+
+    <section class="map-container">
+
+
+        <div class="container">
+
+
+            <iframe src="https://www.google.com/maps/d/embed?mid=1EVMMdcG79xDWU32NYKEwwREj5xRR3hs&ehbc=2E312F&noprof=1">
+
+            </iframe>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-- Gallery -->
+
+
+    <section class="gallery-section">
+
+
+        <div class="container">
+
+
+            <h2>
+                Chofu Highlights Gallery
+            </h2>
+
+
+
+            <div class="gallery-grid">
+
+
+
+                <div class="gallery-card">
+
+                    <img src="images/p8.jpeg">
+
+                    <h4>
+                        🌸 Nogawa River
+                    </h4>
+
+                    <p>
+                        Beautiful place for walking and Sakura viewing.
+                    </p>
+
+                </div>
+
+
+
+
+                <div class="gallery-card">
+
+                    <img src="images/F3.jpeg">
+
+                    <h4>
+                        ⛩️ Jindaiji Temple
+                    </h4>
+
+                    <p>
+                        Historic temple area near UEC.
+                    </p>
+
+                </div>
+
+
+
+
+
+                <div class="gallery-card">
+
+                    <img src="images/F2.jpeg">
+
+                    <h4>
+                        🍜 Food Area
+                    </h4>
+
+                    <p>
+                        Many affordable restaurants around Chofu Station.
+                    </p>
+
+                </div>
+
+
+
+
+
+                <div class="gallery-card">
+
+                    <img src="images/F4.jpeg">
+
+                    <h4>
+                        🍔 MOS Burger
+                    </h4>
+
+                    <p>
+                        Quick and affordable Japanese fast food.
+                    </p>
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- Modal -->
+
+
+    <div id="note-modal" class="modal-box">
+
+
+        <div class="modal-content-box">
+
+
+            <span onclick="closeNote()" class="close-btn">
+
+                &times;
+
+            </span>
+
+
+            <div id="modal-content">
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <!-- Footer -->
+
+    <footer class="bg-dark text-white py-4">
+
+
+        <div class="container text-center">
+
+
+            <h5>
+                LifeEasyChofu
+            </h5>
+
+
+            <p>
+                Making life easier for everyone living in Chofu City.
+            </p>
+
+
+            <small>
+                © 2026 LifeEasyChofu | Group Project
+            </small>
+
+
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+    <script>
+
+        const tips = {
+
+
+            eat: `
+
+<h3>🍜 Budget Eats</h3>
+
+<p>
+Saizeriya, Yoshinoya, Sukiya and other affordable restaurants are good choices for students.
+</p>
+
+`,
+
+
+            shop: `
+
+<h3>🛍 Shopping Tips</h3>
+
+<p>
+Use Daiso, supermarkets and discount stores to save money during your stay.
+</p>
+
+`,
+
+
+            place: `
+
+<h3>🌿 Interesting Places</h3>
+
+<p>
+Visit Nogawa River and Jindaiji Temple for relaxing experiences near UEC.
+</p>
+
+`
+
+        };
+
+
+
+        function openNote(type) {
+
+            document.getElementById("modal-content").innerHTML = tips[type];
+
+            document.getElementById("note-modal").style.display = "flex";
+
+        }
+
+
+
+        function closeNote() {
+
+            document.getElementById("note-modal").style.display = "none";
+
+        }
+
+
+
+    </script>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

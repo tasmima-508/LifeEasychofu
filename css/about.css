@@ -1,0 +1,351 @@
+/* ===================================
+   LifeEasyChofu About Page CSS
+=================================== */
+
+
+/* Hero Section */
+
+.about-hero {
+
+    background: #f1f8f5;
+
+    padding: 70px 20px;
+
+}
+
+
+.about-hero h1 {
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    color: #2c3e50;
+
+}
+
+
+.about-hero span {
+
+    color: #198754;
+
+}
+
+
+.about-hero p {
+
+    max-width: 700px;
+
+    margin: 20px auto 0;
+
+    color: #666;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+
+
+
+/* Common Section */
+
+.about-section {
+
+    padding: 45px 0;
+
+}
+
+
+
+
+
+/* Mission and Who We Are Cards */
+
+.about-card {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.about-card h2 {
+
+    color: #198754;
+
+    font-size: 26px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.about-card h2 i {
+
+    margin-right: 10px;
+
+}
+
+
+
+.about-card p {
+
+    color: #555;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+
+}
+
+
+
+
+
+
+
+/* Section Title */
+
+.section-title {
+
+    text-align: center;
+
+    color: #2c3e50;
+
+    font-weight: 700;
+
+    margin-bottom: 35px;
+
+}
+
+
+
+
+
+
+
+
+/* Feature Cards */
+
+.feature-card {
+
+    height: 100%;
+
+    background: white;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+
+}
+
+
+
+.feature-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+
+.feature-card i {
+
+    font-size: 45px;
+
+    color: #198754;
+
+}
+
+
+
+.feature-card h4 {
+
+    margin-top: 20px;
+
+    color: #2c3e50;
+
+}
+
+
+
+.feature-card p {
+
+    color: #666;
+
+    line-height: 1.7;
+
+}
+
+
+
+
+
+
+
+/* FAQ Section */
+
+
+.faq-section {
+
+    background: #f8f9fa;
+
+    padding: 55px 0;
+
+}
+
+
+
+
+
+.accordion {
+
+    max-width: 850px;
+
+    margin: auto;
+
+}
+
+
+
+
+
+.accordion-item {
+
+    border: none;
+
+    margin-bottom: 15px;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+}
+
+
+
+
+
+.accordion-button {
+
+    padding: 18px;
+
+    font-weight: 600;
+
+    color: #2c3e50;
+
+}
+
+
+
+
+
+.accordion-button:not(.collapsed) {
+
+    background-color: #eaf7ef;
+
+    color: #198754;
+
+}
+
+
+
+
+
+.accordion-button:focus {
+
+    box-shadow: none;
+
+}
+
+
+
+
+
+.accordion-body {
+
+    padding: 20px;
+
+    color: #666;
+
+    line-height: 1.7;
+
+}
+
+
+
+
+
+
+
+
+/* Buttons */
+
+
+.btn {
+
+    transition: 0.3s;
+
+}
+
+
+
+.btn:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+
+
+
+
+
+/* Responsive */
+
+@media(max-width:768px) {
+
+
+    .about-hero h1 {
+
+        font-size: 32px;
+
+    }
+
+
+
+    .about-hero p {
+
+        font-size: 16px;
+
+    }
+
+
+
+    .about-card {
+
+        padding: 25px;
+
+    }
+
+
+}

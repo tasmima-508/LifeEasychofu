@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping | LifeEasyChofu</title>
+
+    <meta name="description"
+        content="Affordable shopping places in Chofu City including supermarkets, 100 yen shops, drug stores, electronics and more.">
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Shopping CSS -->
+
+    <link rel="stylesheet" href="css/shopping.css">
+
+</head>
+
+<body>
+
+    <!-- ===========================
+            Navbar
+=========================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+
+        <div class="container">
+
+            <a class="navbar-brand text-success fw-bold" href="index.html">
+
+                LifeEasyChofu
+
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="index.html">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="garbage.html">
+
+                            Garbage Guide
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active" href="shopping.html">
+
+                            Shopping
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="map.html">
+
+                            Map
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="about.html">
+
+                            About
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <main>
+
+        <!-- Hero -->
+
+        <section class="shopping-hero">
+
+            <div class="container text-center">
+
+                <h1>
+
+                    Affordable Shopping in Chofu
+
+                </h1>
+
+                <p>
+
+                    Find the best supermarkets, 100 yen stores, electronics, furniture,
+                    clothing, convenience stores and more.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Shopping Categories -->
+
+        <section class="py-5">
+
+            <div class="container">
+
+                <!-- =========================
+     Shopping Categories
+========================= -->
+
+                <div class="row g-4 mt-4">
+
+                    <!-- Supermarket -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+
+                        <div class="shopping-card supermarket">
+
+                            <div class="shopping-icon">
+                                <i class="bi bi-cart-fill text-success"></i>
+                            </div>
+
+                            <h5>Supermarkets</h5>
+
+                            <p>
+                                Affordable supermarkets for groceries and household items.
+                            </p>
+
+                            <a href="stores/supermarket.html" class="btn btn-success">
+                                View Stores
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Convenience Store -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+
+                        <div class="shopping-card convenience">
+
+                            <div class="shopping-icon">
+                                <i class="bi bi-shop text-primary"></i>
+                            </div>
+
+                            <h5>Convenience Stores</h5>
+
+                            <p>
+                                24-hour convenience stores for food, drinks and daily needs.
+                            </p>
+
+                            <a href="stores/convenience.html" class="btn btn-primary">
+                                View Stores
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Pharmacy -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+
+                       <div class="shopping-card pharmacy">
+
+                            <div class="shopping-icon">
+                                <i class="bi bi-capsule-pill text-danger"></i>
+                            </div>
+
+                            <h5>Pharmacy & Daily Essentials</h5>
+
+                            <p>
+                                Medicine, cosmetics and everyday necessities.
+                            </p>
+
+                            <a href="stores/pharmacy.html" class="btn btn-danger">
+                                View Stores
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 100 Yen Shops -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+
+                        <div class="shopping-card yen100">
+
+                            <div class="shopping-icon">
+                                <i class="bi bi-cash-coin text-warning"></i>
+                            </div>
+
+                            <h5>100-Yen Shops</h5>
+
+                            <p>
+                                Budget stores with useful household items and stationery.
+                            </p>
+
+                            <a href="stores/100yen.html" class="btn btn-warning">
+                                View Stores
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Clothing -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+
+                        <div class="shopping-card clothing">
+
+                            <div class="shopping-icon">
+                                <i class="bi bi-bag-heart-fill text-info"></i>
+                            </div>
+
+                            <h5>Clothing & Thrift Stores</h5>
+
+                            <p>
+                                Budget fashion and second-hand clothing shops.
+                            </p>
+
+                            <a href="stores/clothing.html" class="btn btn-info text-white">
+                                View Stores
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Restaurant -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+
+                        <div class="shopping-card restaurant">
+
+                            <div class="shopping-icon">
+                                <i class="bi bi-cup-hot-fill text-danger"></i>
+                            </div>
+
+                            <h5>Restaurants</h5>
+
+                            <p>
+                                Affordable restaurants and fast-food chains near Chofu.
+                            </p>
+
+                            <a href="stores/restaurant.html" class="btn btn-danger">
+                                View Stores
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Electronics -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+
+                        <div class="shopping-card electronics">
+
+                            <div class="shopping-icon">
+                                <i class="bi bi-laptop-fill text-secondary"></i>
+                            </div>
+
+                            <h5>Electronics</h5>
+
+                            <p>
+                                Computers, phones, cameras and electronic accessories.
+                            </p>
+
+                            <a href="stores/electronics.html" class="btn btn-secondary">
+                                View Stores
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Shopping Mall -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+
+                        <div class="shopping-card mall">
+
+                            <div class="shopping-icon">
+                                <i class="bi bi-building-fill text-success"></i>
+                            </div>
+
+                            <h5>Shopping Malls</h5>
+
+                            <p>
+                                Shopping malls with restaurants, fashion and entertainment.
+                            </p>
+
+                            <a href="stores/mall.html" class="btn btn-success">
+                                View Stores
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ===========================
+            Footer
+    =========================== -->
+
+  
+    <footer class="bg-dark text-white py-4">
+
+
+        <div class="container text-center">
+
+
+            <h5>
+                LifeEasyChofu
+            </h5>
+
+
+
+            <p>
+
+                Making life easier for everyone living in Chofu City.
+
+            </p>
+
+
+
+            <small>
+
+                © 2026 LifeEasyChofu | Group Project
+
+            </small>
+
+
+
+        </div>
+
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

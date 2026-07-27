@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Garbage Guide | LifeEasyChofu</title>
+
+
+    <meta name="description"
+        content="Chofu City garbage separation and disposal guide for residents and international students.">
+
+
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- Bootstrap Icons -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <!-- Garbage CSS -->
+
+    <link rel="stylesheet" href="css/garbage.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+    <!-- Navbar -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+
+
+        <div class="container">
+
+
+            <a class="navbar-brand fw-bold text-success" href="index.html">
+
+                LifeEasyChofu
+
+            </a>
+
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+
+                <span class="navbar-toggler-icon"></span>
+
+
+            </button>
+
+
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+
+                <ul class="navbar-nav ms-auto">
+
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="index.html">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active" href="garbage.html">
+
+                            Garbage Guide
+
+                        </a>
+
+                    </li>
+
+
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="shopping.html">
+
+                            Shopping
+
+                        </a>
+
+                    </li>
+
+
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="map.html">
+
+                            Map
+
+                        </a>
+
+                    </li>
+
+
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="about.html">
+
+                            About
+
+                        </a>
+
+                    </li>
+
+
+
+                </ul>
+
+
+            </div>
+
+
+        </div>
+
+
+    </nav>
+
+
+
+
+
+
+
+    <!-- Main -->
+
+
+    <section class="main-content">
+
+
+        <div class="container">
+
+
+
+            <div class="row justify-content-center text-center">
+
+
+                <div class="col-lg-8">
+
+
+                    <h1 class="fw-bold">
+
+
+                        <i class="bi bi-trash3 text-success"></i>
+
+                        Garbage Disposal Guide
+
+
+                    </h1>
+
+
+
+                    <p class="lead mt-3">
+
+                        Learn Chofu City's garbage separation rules
+                        and proper disposal methods.
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Garbage Cards -->
+
+
+            <div class="row g-4 mt-4">
+
+
+
+
+
+                <!-- Recyclable -->
+
+
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                
+
+
+                    <div class="card garbage-card recycle" onclick="showGarbage('recyclable')">
+
+
+                        <img src="images/recyclable.jpeg" class="card-img-top" alt="Recyclable">
+
+
+
+                        <div class="card-body text-center">
+
+
+                            <i class="bi bi-recycle fs-1 text-success"></i>
+
+
+                            <h4 class="mt-3">
+                                Recyclable
+                            </h4>
+
+
+                            <p>
+                                資源ごみ
+                            </p>
+
+
+
+                            <button class="btn btn-success">
+
+                                View Guide
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+                <!-- Burnable -->
+
+
+                <div class="col-xl-3 col-lg-6 col-md-6">
+
+
+                    <div class="card garbage-card burnable" onclick="showGarbage('burnable')">
+
+
+                        <img src="images/burnable.jpeg" class="card-img-top" alt="Burnable">
+
+
+
+                        <div class="card-body text-center">
+
+
+                            <i class="bi bi-fire fs-1 text-danger"></i>
+
+
+                            <h4 class="mt-3">
+                                Burnable
+                            </h4>
+
+
+                            <p>
+                                燃やすごみ
+                            </p>
+
+
+
+                            <button class="btn btn-danger">
+
+                                View Guide
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+                <!-- Non Burnable -->
+
+
+                <div class="col-xl-3 col-lg-6 col-md-6">
+
+
+                    <div class="card garbage-card nonburnable" onclick="showGarbage('nonburnable')">
+
+
+                        <img src="images/nonburnable.jpeg" class="card-img-top" alt="Non Burnable">
+
+
+
+                        <div class="card-body text-center">
+
+
+                            <i class="bi bi-x-circle fs-1 text-primary"></i>
+
+
+                            <h4 class="mt-3">
+                                Non-Burnable
+                            </h4>
+
+
+                            <p>
+                                燃やさないごみ
+                            </p>
+
+
+
+                            <button class="btn btn-primary">
+
+                                View Guide
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+                <!-- Bulky -->
+
+
+                <div class="col-xl-3 col-lg-6 col-md-6">
+
+
+                    <div class="card garbage-card bulky" onclick="showGarbage('bulky')">
+
+
+                        <img src="images/bulky.jpeg" class="card-img-top" alt="Bulky">
+
+
+
+                        <div class="card-body text-center">
+
+
+                            <i class="bi bi-house fs-1 text-warning"></i>
+
+
+                            <h4 class="mt-3">
+                                Bulky Waste
+                            </h4>
+
+
+                            <p>
+                                粗大ごみ
+                            </p>
+
+
+
+                            <button class="btn btn-warning">
+
+                                View Guide
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-- Modal -->
+
+
+    <div class="modal fade" id="garbageModal">
+
+
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+
+
+            <div class="modal-content">
+
+
+                <div class="modal-header">
+
+
+                    <h5 class="modal-title">
+
+                        Garbage Guide
+
+                    </h5>
+
+
+                    <button class="btn-close" data-bs-dismiss="modal">
+
+                    </button>
+
+
+                </div>
+
+
+
+                <div class="modal-body">
+
+                    <div class="row align-items-center">
+
+                        <!-- Garbage Information -->
+
+                        <div class="col-md-7">
+
+                            <div id="modalGarbageContent">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Garbage Image -->
+
+                        <div class="col-md-5 text-center">
+
+                            <img id="modalBagImage" class="modal-bag-image" alt="Garbage Bag">
+
+                            <p class="text-muted mt-3">
+                                Designated Garbage Bag
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <!-- Footer -->
+
+
+    <footer class="bg-dark text-white py-4">
+
+
+        <div class="container text-center">
+
+
+            <h5>
+
+                LifeEasyChofu
+
+            </h5>
+
+
+            <p>
+
+                Making life easier for everyone living in Chofu City.
+
+            </p>
+
+
+            <small>
+
+                © 2026 LifeEasyChofu | Group Project
+
+            </small>
+
+
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+    <!-- Bootstrap JS -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+    <!-- Garbage Popup JS -->
+
+
+    <script>
+
+
+        function showGarbage(type) {
+
+
+
+            const data = {
+
+
+
+                recyclable: {
+
+
+                    title: "♻ Recyclable Resources",
+
+
+                    text: `
+
+<h5>
+資源ごみ (Shigen Gomi)
+</h5>
+
+
+<hr>
+
+
+<h6>
+Items Included
+</h6>
+
+
+<ul>
+
+<li>PET bottles</li>
+
+<li>Glass bottles</li>
+
+<li>Aluminum cans</li>
+
+<li>Paper and cardboard</li>
+
+</ul>
+
+
+
+<h6>
+Disposal Method
+</h6>
+
+
+<ol>
+
+<li>Wash bottles and cans.</li>
+
+<li>Remove caps and labels.</li>
+
+<li>Separate materials correctly.</li>
+
+<li>Put them in recycling area.</li>
+
+</ol>
+
+
+
+<div class="alert alert-success">
+
+Do not mix recyclable waste with normal garbage.
+
+</div>
+
+`,
+
+
+                    bag: "images/recycle-bag.jpeg"
+
+
+                },
+
+
+
+
+
+
+                burnable: {
+
+
+                    title: "🔥 Burnable Waste",
+
+
+                    text: `
+
+<h5>
+燃やすごみ (Moyasu Gomi)
+</h5>
+
+
+<hr>
+
+
+<h6>
+Items Included
+</h6>
+
+
+<ul>
+
+<li>Food waste</li>
+
+<li>Tissue paper</li>
+
+<li>Paper products</li>
+
+<li>Small wooden items</li>
+
+</ul>
+
+
+
+
+<h6>
+Disposal Method
+</h6>
+
+
+<ol>
+
+<li>Remove water from food waste.</li>
+
+<li>Use official garbage bags.</li>
+
+<li>Close bags properly.</li>
+
+<li>Dispose on collection day.</li>
+
+</ol>
+
+
+
+
+<div class="alert alert-danger">
+
+Do not include bottles and cans.
+
+</div>
+
+`,
+
+
+                    bag: "images/burnable-bag.jpeg"
+
+
+                },
+
+
+
+
+
+
+                nonburnable: {
+
+
+                    title: "🚫 Non-Burnable Waste",
+
+
+                    text: `
+
+<h5>
+燃やさないごみ (Moyasanai Gomi)
+</h5>
+
+
+<hr>
+
+
+<h6>
+Items Included
+</h6>
+
+
+<ul>
+
+<li>Ceramic items</li>
+
+<li>Metal products</li>
+
+<li>Glass objects</li>
+
+<li>Small electronics</li>
+
+</ul>
+
+
+
+
+<h6>
+Disposal Method
+</h6>
+
+
+<ol>
+
+<li>Wrap sharp objects safely.</li>
+
+<li>Separate dangerous items.</li>
+
+<li>Use correct garbage bags.</li>
+
+<li>Follow collection schedule.</li>
+
+</ol>
+
+
+
+<div class="alert alert-warning">
+
+Batteries require special disposal.
+
+</div>
+
+`,
+
+
+                    bag: "images/nonburnable-bag.jpeg"
+
+
+                },
+
+
+
+
+
+
+                bulky: {
+
+
+                    title: "🛋 Bulky Waste",
+
+
+                    text: `
+
+<h5>
+粗大ごみ (Sodai Gomi)
+</h5>
+
+
+<hr>
+
+
+<h6>
+Items Included
+</h6>
+
+
+<ul>
+
+<li>Furniture</li>
+
+<li>Bicycle</li>
+
+<li>Mattress</li>
+
+<li>Large appliances</li>
+
+</ul>
+
+
+
+
+<h6>
+Disposal Method
+</h6>
+
+
+<ol>
+
+<li>Make reservation.</li>
+
+<li>Buy disposal sticker.</li>
+
+<li>Attach sticker.</li>
+
+<li>Place outside on pickup day.</li>
+
+</ol>
+
+
+
+
+<div class="alert alert-warning">
+
+Bulky waste requires advance booking.
+
+</div>
+
+`,
+
+
+                    bag: "images/bulky-bag.jpeg"
+
+
+                }
+
+
+
+            };
+
+
+
+
+
+            document.querySelector(".modal-title").innerHTML =
+                data[type].title;
+
+
+
+            document.getElementById("modalGarbageContent").innerHTML =
+                data[type].text;
+
+
+
+            document.getElementById("modalBagImage").src =
+                data[type].bag;
+
+
+
+
+            let modal = new bootstrap.Modal(
+                document.getElementById("garbageModal")
+            );
+
+
+
+            modal.show();
+
+
+
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

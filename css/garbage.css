@@ -1,0 +1,436 @@
+/* =====================================
+   Garbage Page CSS
+   LifeEasyChofu
+===================================== */
+
+
+/* Main spacing */
+
+.main-content{
+
+    padding-top:70px;
+
+    padding-bottom:100px;
+
+}
+
+
+/* Title Section */
+
+.main-content h1{
+
+    font-size:2.8rem;
+
+    margin-bottom:15px;
+
+}
+
+
+.main-content .lead{
+
+    color:#666;
+
+}
+
+
+
+/* Garbage Cards Area */
+
+.row.g-4{
+
+    margin-top:50px !important;
+
+    margin-bottom:80px;
+
+}
+
+
+
+/* Garbage Card */
+
+
+.garbage-card{
+
+    border:none;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    background:white;
+
+    height:100%;
+
+    min-height:420px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.12);
+
+    transition:.35s ease;
+
+}
+
+
+
+.garbage-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+    0 20px 45px rgba(0,0,0,.18);
+
+}
+
+
+
+
+/* Top Color Line */
+
+
+.garbage-card.recycle{
+
+    border-top:6px solid #198754;
+
+}
+
+
+.garbage-card.burnable{
+
+    border-top:6px solid #dc3545;
+
+}
+
+
+.garbage-card.nonburnable{
+
+    border-top:6px solid #0d6efd;
+
+}
+
+
+.garbage-card.bulky{
+
+    border-top:6px solid #ffc107;
+
+}
+
+
+
+
+
+/* Images */
+
+
+.garbage-card img{
+
+    width:100%;
+
+    height:170px;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+
+
+.garbage-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+
+
+/* Card Body */
+
+
+.garbage-card .card-body{
+
+    padding:30px 20px;
+
+}
+
+
+
+.garbage-card i{
+
+    transition:.3s;
+
+}
+
+
+
+.garbage-card:hover i{
+
+    transform:scale(1.2);
+
+}
+
+
+
+.garbage-card h4{
+
+    font-size:21px;
+
+    font-weight:700;
+
+    margin-top:15px;
+
+}
+
+
+
+.garbage-card p{
+
+    color:#777;
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+/* Button */
+
+
+.garbage-card .btn{
+
+    border-radius:50px;
+
+    padding:10px 30px;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+/* =====================================
+       Popup Modal
+===================================== */
+
+
+.modal-content{
+
+    border:none;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 15px 45px rgba(0,0,0,.25);
+
+}
+
+
+
+.modal-header{
+
+    background:#eef8f0;
+
+    padding:22px 30px;
+
+}
+
+
+
+.modal-title{
+
+    color:#198754;
+
+    font-size:26px;
+
+    font-weight:700;
+
+}
+
+
+
+.modal-body{
+
+    padding:40px;
+
+}
+
+
+
+
+/* Popup Text */
+
+
+#modalGarbageContent h5{
+
+    font-size:20px;
+
+    color:#555;
+
+}
+
+
+
+#modalGarbageContent h6{
+
+    margin-top:25px;
+
+    font-weight:700;
+
+}
+
+
+
+#modalGarbageContent li{
+
+    margin-bottom:8px;
+
+    color:#555;
+
+}
+
+
+
+
+
+/* Garbage Bag Image */
+
+
+.modal-bag-image{
+
+    width:280px;
+
+    height:350px;
+
+    object-fit:contain;
+
+    transition:.3s;
+
+}
+
+
+
+.modal-bag-image:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+
+/* Footer Space */
+
+
+footer{
+
+    margin-top:0;
+
+}
+
+
+
+
+/* =====================================
+       Responsive
+===================================== */
+
+
+@media(max-width:1200px){
+
+
+    .garbage-card img{
+
+        height:160px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:992px){
+
+
+    .main-content h1{
+
+        font-size:2.3rem;
+
+    }
+
+
+    .garbage-card{
+
+        min-height:400px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:768px){
+
+
+    .main-content{
+
+        padding-top:50px;
+
+        padding-bottom:60px;
+
+    }
+
+
+    .garbage-card img{
+
+        height:190px;
+
+    }
+
+
+    .modal-body{
+
+        padding:25px;
+
+    }
+
+
+    .modal-bag-image{
+
+        width:200px;
+
+        height:250px;
+
+        margin-top:30px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:576px){
+
+
+    .main-content h1{
+
+        font-size:1.8rem;
+
+    }
+
+
+    .garbage-card{
+
+        min-height:auto;
+
+    }
+
+
+}
